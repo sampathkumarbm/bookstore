@@ -1,0 +1,16 @@
+ul{
+    display:'flex';
+    flex-direction:'row';
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin:'auto';
+    padding:'1rem';
+    width:'250px';
+    height: 100;
+    box-shadow: 5px 5px;
+    align-items: center;
+}
