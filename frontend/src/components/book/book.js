@@ -7,12 +7,18 @@ import Tooltip from '@mui/material/Tooltip';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import axios from 'axios';
 
 import { Link, useNavigate } from "react-router-dom";
 import './book.css'
 
 export const Book = ({book}) => {
+    const history =  useNavigate()
     const {_id, name, author, description, price, image} = book
+
+    const deleteHandler = () => {
+        axios.delete(`http://localhost:5000/books/${_id}`).then(()=>history("/books"))
+    }
     return(
         <div>
             <Card sx={{ display: 'flex', width:'341px', height: '195px'}}>
@@ -44,7 +50,7 @@ export const Book = ({book}) => {
                     </CardContent>
                     <CardActions>
                         <Button LinkComponent={Link} to={`/books/${_id}`} size="small">Update</Button>
-                        <Button size="small">Delete</Button>
+                        <Button onClick={deleteHandler} size="small">Delete</Button>
                     </CardActions>
                 </Box>
             </Card><br/>

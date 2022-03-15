@@ -32,6 +32,7 @@ const getById = async (request, response, next) => {
 };
 
 const addBook = async (request, response, next) => {
+  console.log('request', request.body)
   const { name, author, description, price, available, image } = request.body;
     try{
         let db_connect = await dbo.getDb();

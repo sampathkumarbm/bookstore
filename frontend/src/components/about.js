@@ -1,9 +1,10 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 
 export const About = () => {
     return(
-        <div>
+        <Box>
             about books
-        </div>
+        </Box>
     )
 }

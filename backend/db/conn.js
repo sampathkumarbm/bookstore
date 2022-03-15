@@ -1,6 +1,7 @@
 
 const { MongoClient } = require("mongodb")
 const Db = "mongodb+srv://<username>:<password>@cluster1.beims.mongodb.net/<databasename>?retryWrites=true&w=majority";
+
 const client = new MongoClient(Db, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
