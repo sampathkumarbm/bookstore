@@ -32,7 +32,7 @@ export const BookDetails = () => {
 
     useEffect(()=>{
         const fetchHandler = async() =>{
-            await axios.get(`http://localhost:5000/books/${id}`).then(res => {setInputs(res.data.result)})
+            await axios.get(`http://localhost:5000/books/${id}`).then(res => {setInputs(res.data.result); setChecked(res.data.result.available)})
         }
         fetchHandler()
     },[id])
