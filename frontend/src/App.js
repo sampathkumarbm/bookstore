@@ -1,12 +1,11 @@
 import React from 'react'
 import { Header } from "./components/header";
-import { Routes, Route } from "react-router-dom"
+import { Navigate, Routes, Route } from "react-router-dom"
 import { AddBook } from "./components/add-book"
 import { About } from "./components/about"
-import { Books } from './components/book/books';
+import { Books } from './components/book/books'
 import { Home } from "./components/home"
 import { BookDetails } from "./components/book/book-details"
-
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path= "/" element={<Home />} exact/>
+          <Route path="/" element={<Navigate replace to="/books" />} />
           <Route path= "/add" element={<AddBook />} exact/>
           <Route path= "/books" element={<Books/>} exact/>
           <Route path= "/about" element={<About/>} exact/>
