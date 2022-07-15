@@ -1,8 +1,2 @@
-{ 
-    "reporter": "mochawesome",
-    "reporterOptions": {
-        "overwrite": false,
-        "html": true,
-        "json": false
-    }
-}
+
+{}
