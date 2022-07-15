@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bookstore
-        image: sharanabasava022/bookstore-1:dock01
+        image: sharanabasava022/bookstore-1:dock02
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
