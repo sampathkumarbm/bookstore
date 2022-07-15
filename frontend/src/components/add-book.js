@@ -10,7 +10,8 @@ export const AddBook = () => {
         description: "",
         author: "",
         price: "",
-        image: ""
+        image: "",
+        phone: ""
     })
     const [checked, setChecked] = useState(false)
 
@@ -59,6 +60,9 @@ console.log('inputs',inputs)
 
                 <FormLabel>Image</FormLabel>
                 <TextField value={inputs.image} onChange={handleChange} margin="normal" fullWidth variant="outlined" name="image"></TextField>
+                
+                <FormLabel>Phone</FormLabel>
+                <TextField value={inputs.phone} onChange={handleChange} margin="normal" fullWidth variant="outlined" name="phone"></TextField>
 
                 <FormControlLabel control={<Checkbox checked={checked} />} onChange={()=>{setChecked(!checked)}} label="Available" />
 
