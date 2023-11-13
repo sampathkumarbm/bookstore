@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "62b89212418401ed5248fe61",
+    "name": "kasukabe Defence force",
+    "author": "Himawari",
+    "description": "Friends group",
+    "price": "800",
+    "available": true,
+    "image": "https://loveshayariimages.in/wp-content/uploads/2021/10/2021-Latest-Shinchan-Images-pictures-download.jpg"
+  },
+  {
+    "_id": "62b9d734e39f52d2d6fcea4c",
+    "name": "",
+    "author": "",
+    "description": "",
+    "price": "",
+    "available": false,
+    "image": ""
+  },
+  {
+    "_id": "62ce902845512b0033c84ed1",
+    "name": "shinchan",
+    "author": "Himawari",
+    "description": "story of a cute kid",
+    "price": "800",
+    "available": true,
+    "image": "https://loveshayariimages.in/wp-content/uploads/2021/10/2021-Latest-Shinchan-Images-pictures-download.jpg"
+  }
+]
