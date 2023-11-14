@@ -24,7 +24,7 @@ export const AddBook = () => {
 
     const sendRequest = async() => {
         console.log({...inputs, available: checked})
-        await axios.post("http://localhost:5000/add",{...inputs, available: checked})
+        await axios.post("http://localhost:5001/add",{...inputs, available: checked})
     }
 
     const handleSubmit = (e) => {
