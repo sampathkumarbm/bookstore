@@ -2,6 +2,7 @@ const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
 
 const getAllBooks = async (request, response, next) => {
+  console.log({request})
   try {
     let db_connect = await dbo.getDb("books");
     db_connect

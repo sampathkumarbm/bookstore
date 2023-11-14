@@ -5,7 +5,7 @@ const port = 5001
 
 //middlewares
 app.use(cors({
-  origin : "http://13.50.118.213:3000/books"
+  origin : "http://13.50.118.213:3000"
 }));
 
 app.use(express.json());
