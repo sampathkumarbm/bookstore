@@ -4,7 +4,10 @@ const cors = require("cors");
 const port = 5001
 
 //middlewares
-app.use(cors());
+app.use(cors({
+  origin : "http://13.50.118.213:3000/books"
+}));
+
 app.use(express.json());
 app.use(require("./routes/book-routes"));
 
