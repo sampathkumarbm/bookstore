@@ -15,9 +15,10 @@ app.use(require("./routes/book-routes"));
 // get driver connection
 const dbo = require("./db/conn");
 
-app.listen(port, () => {
+app.listen(port, (err, response) => {
   // perform a database connection when server starts
-  dbo.connectToServer(function (err) {
+  dbo.connectToServer(function (err, response) {
+  console.log({response},{err})
     if (err) console.error(err);
 
   });

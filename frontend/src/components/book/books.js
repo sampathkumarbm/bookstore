@@ -5,7 +5,7 @@ import { Header } from "../header"
 import { Book } from "./book"
 import './book.css'
 
-const url = "http://localhost:5001/books"
+const url = "http://13.50.118.213:5001/books"
 
 export const Books = () => {
     const [books, setBooks] = useState([]);

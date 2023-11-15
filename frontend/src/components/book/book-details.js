@@ -27,12 +27,12 @@ export const BookDetails = () => {
 
     const sendRequest = async() => {
         console.log({...inputs, available: checked})
-        await axios.put(`http://localhost:5001/books/${id}`,{...inputs, available: checked})
+        await axios.put(`http://13.50.118.213:5001/books/${id}`,{...inputs, available: checked})
     }
 
     useEffect(()=>{
         const fetchHandler = async() =>{
-            await axios.get(`http://localhost:5001/books/${id}`).then(res => {setInputs(res.data.result); setChecked(res.data.result.available)})
+            await axios.get(`http://13.50.118.213:5001/books/${id}`).then(res => {setInputs(res.data.result); setChecked(res.data.result.available)})
         }
         fetchHandler()
     },[id])

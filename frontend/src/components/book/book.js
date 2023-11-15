@@ -17,7 +17,7 @@ export const Book = ({book}) => {
     const {_id, name, author, description, price, image} = book
 
     const deleteHandler = () => {
-        axios.delete(`http://localhost:5001/books/${_id}`).then(()=>history("/")).then(()=>history("/books"))
+        axios.delete(`http://13.50.118.213:5001/books/${_id}`).then(()=>history("/")).then(()=>history("/books"))
     }
     return(
         <div>
